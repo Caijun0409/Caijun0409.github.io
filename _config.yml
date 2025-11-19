@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Caijun's Blog
 subtitle: ""
 description: ""
 keywords:
-author: John Doe
+author: Caijun
 language: en
 timezone: ""
 
@@ -104,3 +104,73 @@ deploy:
   type: git
   repo: git@github.com:Caijun0409/Caijun0409.github.io.git
   branch: main
+
+theme_config:
+  # 1. 基本信息 (对应左上角和页脚)
+  info:
+    title: 俊俊的个人博客
+    subtitle: Redefine Your Hexo Journey.
+    author: Caijun
+    url: https://caijun0409.github.io
+
+  # 2. 颜色设置
+  colors:
+    primary: "#A31F34"
+    default_mode: light
+
+  # 3. 首页大图与标题 (Home Banner)
+  home_banner:
+    enable: true
+    style: fixed
+    image:
+      light: /images/banner.jpg # 确保 source/images/ 下有 banner.jpg
+      dark: /images/banner.jpg
+    title: Caijun的记录博客
+    subtitle:
+      text:
+        - 技术
+        - 阅读
+        - 记录
+        - 学习
+      typing_speed: 100
+      loop: true
+    text_style:
+      title_size: 2.8rem
+      subtitle_size: 1.5rem
+
+  # 4. 导航栏 (Navbar)
+  navbar:
+    auto_hide: false
+    color:
+      left: "#f78736"
+      right: "#367df7"
+      transparency: 35
+    links:
+      Home:
+        path: /
+        icon: fa-regular fa-house
+      Archives:
+        path: /archives
+        icon: fa-regular fa-archive
+
+  # 5. 页脚设置 (Footer)
+  footer:
+    runtime: true
+    start: 2025/11/19 20:36:14
+    statistics: true
+    icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
+
+  # 6. 文章样式 (Article)
+  articles:
+    style:
+      font_size: 16px
+      line_height: 1.5
+      image_border_radius: 14px
+    word_count:
+      enable: true
+      count: true
+      min2read: true
+
+  # 7. 默认图片设置
+  defaults:
+    avatar: /images/avatar.jpg
