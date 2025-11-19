@@ -173,4 +173,9 @@ theme_config:
 
   # 7. 默认图片设置
   defaults:
+    favicon: /images/favicon.ico
     avatar: /images/avatar.jpg
+
+  page_templates:
+    tags_style: cloud
+    friends_column: 2
